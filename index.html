@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Temple ERA|HOME</title>
+    <!--Implement CSS-->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    
+    <!--website logo-->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+<!--Implement Java Script-->
+<script type="text/javascript" src="eraMainJS.js"></script>
+<script type="text/javascript">
+   $(function(){
+      alert("My First Jquery Test");
+   });
+</script>
+
+<div class="top-wrapper">
+    <header>
+        <div class="content-wrapper">   
+            <!--Temple logo-->
+            <img src="images/templelogo4.svg" alt="templelogo" style="width:15%; height:auto;">
+            <!--Log in form-->
+            <form class="topcorner" action="">
+                Tuportal:
+                <input type="text" name="Tuportal" value="">
+                <br>
+                Password:
+                <input type="text" name="lastname" value="">
+                <br>
+                <input type="submit" value="Submit" onclick="isValid();">
+            </form>
+            <div>
+                <h1 >ELECTRONIC RESEARCH</h1>
+            </div>   
+        </div>
+    <div class="content-wrapper"></div>
+        <!--button dropdown menu-->
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">ABOUT</button>
+                <div class="dropdown-content" style="left:0;">
+                    <a href="OVPR.htm">Vice President</a>
+                    <a href="#">News and Events</a>
+                    <a href="#">Staff Directory</a>
+                </div>
+            </div>
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">ADMINISTATION</button>
+                <div class="dropdown-content" style="left:0;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">COMPLIANCE</button>
+                <div class="dropdown-content" style="left:0;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">INNOVATION</button>
+                <div class="dropdown-content" style="left:0;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">MEMBERS</button>
+                <div class="dropdown-content" style="left:0;">
+                    <a href="staff.html">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+        </header>
+    </div>
+    
+    <div class="bottom-wrapper">
+    
+     <div class="back-ground-image"></div>
+        <!--START   Padding 
+        <div class="section">
+            <p>eRA at Temple University
+            ...
+            </p>
+        </div> 
+    -->
+
+
+        <div class="section">
+            <div class="row">
+                <div class="column side">
+                <h2>Our staff</h2>
+                <p>Krunal</p>
+                <p>Dani</p>
+                <p>Nadia</p>
+                <p>Pearl</p>
+                </div>
+                <div class="column middle">
+                <h2>Reports</h2>
+                <p>Strategic report</p>
+                <p>IBR report</p>
+                </div>
+                <div class="column side">
+                    <h2>School</h2>
+                    <p>Love: Tyler of Art: simple and easy</p>
+                    <p>Hate: School of Medicine: asking too much work and long</p>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="content-wrapper">   
+                <div class="circle">   
+                </div>
+                <div class="circle">
+                </div>
+                <div class="circle">   
+                </div>
+                <div class="circle">
+                </div>
+        </div>
+    -->
+           <!--JavaScript Validation for input-->
+           <div class="sectionBorder">
+                <p>Enter number of hour worked last week</p>
+                <input class="textBox" id="numb">
+                <!--Tooltip validation-->
+                <div class="hourworktooltip"><a>*</a>
+                <span class="hourworksugestion">Hour must between 1 and 20</span>
+                </div>
+                <!--End tooltip validation-->
+                <br><button class="button button1" onclick="Validation()">Submit</button></br>
+                <p id="numberValidation"></p>
+            
+            </div>
+            
+            <!--log-in with background image-->
+            <div class="log-in">
+                    <div class="log-in-content">
+                            <p>TU:</p>
+                            <input class="textBox" id="userIput1">
+                            <br/><br/>
+                            <p>Password:</p>
+                            <input class="textBox" id="passWord1">
+                            <br/><br/>
+                            <br><button class="button button1" onclick="loginJS()">Submit</button></br>
+                        </div>
+                </div>
+           
+
+<div class="sectionBorder">
+    <center>
+    <table >
+        <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Position</th>
+        </tr>
+        <tr>
+        <td>Pearl</td>
+        <td>Nguyen</td>
+        <td>World saver</td>
+        </tr>
+        <tr>
+        <td>Nadia</td>
+        <td>Said</td>
+        <td>Secretary</td>
+        </tr>
+    </table>
+    <label for="getEmployee">Select the employee</label>
+    <select id="getEmployee">
+      <option value="pearl">Pearl</option>
+      <option value="nadia">Nadia</option>
+      <option value="other">Other</option>
+    </select>
+    <br><button class="button button1" onclick="getEmployee()">Try it</button></br>
+  <!--  
+    <button type="button" onclick="getEmployee()">Try it</button>-->
+</div>
+<div class="section">
+        <p> Office Location</p>
+    <div class="map">
+        <!--Implement Google Maps-->
+    <center> <div center id="googleMap" style="width:60%;height:200px;">
+    </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLGtpi1vgL_BfzW9MdpKgThmVgpv5DUJE&callback=myMap" type="text/javascript"></script>
+    </center>   
+</div>
+</div>
+
+</body>
+<footer >
+        <img src="images/favicon.ico" alt="templelogo" style="width:8%; height:auto;">
+        
+        <!--Implement Java Script-
+        <script type="text/javascript" src="eraMainJS.js"></script>
+        <button type="button" onclick="getDate()">Date</button>
+        <p id="date"></p>
+        -->
+</footer>
+</html>
